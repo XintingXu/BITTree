@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.xuxinting.bitree.Comment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/SenderName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MessageContent"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/SenderName"
+        android:layout_toEndOf="@+id/SenderName"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MeaasgeApprove"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:background="@drawable/approve_min"
+        android:layout_below="@+id/MessageContent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentList"
+        android:layout_toEndOf="@+id/MessageContent"
+        android:layout_below="@+id/MeaasgeApprove"
+        android:layout_above="@+id/NewComment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/ApproveNum"
+        android:layout_toEndOf="@+id/MeaasgeApprove"
+        android:layout_alignBottom="@+id/MeaasgeApprove"
+        android:layout_toRightOf="@+id/MeaasgeApprove"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布"
+        android:id="@+id/NewComment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/CommentList"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/NewComment"
+        android:layout_alignTop="@+id/NewComment"/>
+</RelativeLayout>

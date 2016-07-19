@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.xuxinting.bitree.MainActivity"
+    android:background="@drawable/tree_hole">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReadMessage"
+        android:src="@drawable/rea_message"
+        android:clickable="true"
+        android:alpha="20"
+        android:layout_below="@+id/UserConfig"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserConfig"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/user_songshu"
+        android:clickable="true"
+        android:alpha="20"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/NewMessage"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NewMessage"
+        android:src="@drawable/new_message"
+        android:layout_below="@+id/ReadMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:alpha="20"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogIn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_button"/>
+
+</RelativeLayout>
